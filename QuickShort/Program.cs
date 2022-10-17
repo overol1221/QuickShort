@@ -65,3 +65,18 @@ namespace QuickShort
             pivot = arr[low];
 
             while (i <= j)
+            {
+                //Search for an element greater than pivot
+                while ((arr[i] <= pivot) && (i <= high))
+                {
+                    i++;
+                    cmp_count++;
+                }
+                cmp_count++;
+
+                if (i < j) //If the greator element is on the left of the element
+                {
+                    //swap the element at index i with the element at index j
+                    swap(i, j);
+                    mov_count++;
+                }
