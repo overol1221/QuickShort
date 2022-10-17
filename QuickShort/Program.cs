@@ -117,3 +117,23 @@ namespace QuickShort
             Console.WriteLine("\n Number of Comparison: " + cmp_count);
             Console.WriteLine("\n Number of Data Movements: " + mov_count);
         }
+
+        int getSize()
+        {
+            return n;
+        }
+
+        static void Main(string[] args)
+        {
+            //Declaring the object of the class
+            Program mylist = new Program();
+            //Accept Array Elements
+            mylist.read();
+            //Calling the sorting function
+            //First call to quick sort Alogarithm
+            mylist.q_sort(0, mylist.getSize() - 1);
+            //Display sorted array
+            mylist.display();
+            //to exit from the console
+            Console.WriteLine("\n\n Press enter to exit.");
+            Console.Read();
