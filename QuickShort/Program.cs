@@ -49,3 +49,19 @@ namespace QuickShort
             arr[x] = arr[y];
             arr[y] = temp;
         }
+
+        public void q_sort(int low, int high)
+        {
+            int pivot, i, j;
+            if (low > high)
+                return;
+            //Parition the list into two parts;
+            //one countaining elements less that or equal to pivot
+            //Outher countaining elements greather than pivot
+
+            i = low + 1;
+            j = high;
+
+            pivot = arr[low];
+
+            while (i <= j)
