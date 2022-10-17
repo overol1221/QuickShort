@@ -27,4 +27,10 @@ namespace QuickShort
                     break;
                 else
                     Console.WriteLine("\nArray can have maximum 20 element \n");
-     
+            }
+            Console.WriteLine("\n=====================");
+            Console.WriteLine("Enter Array Elements");
+            Console.WriteLine("\n=====================");
+
+            //get array elements
+            for (int i = 0; i < n; i++)
